@@ -6,6 +6,14 @@ A comprehensive theme featuring deep blues and rich purples for a modern, elegan
 
 **[Installation](#installation)** • **[Features](#features)** • **[Screenshots](#screenshots)** • **[Customization](#customization)**
 
+---
+
+### 🚀 Quick Install
+
+```bash
+git clone https://github.com/DanielCoffey1/deep-purple-blue-omarchy.git ~/.config/omarchy/themes/deep-purple-blue && cd ~/.config/omarchy/themes/deep-purple-blue && ./apply-theme.sh
+```
+
 </div>
 
 ---
@@ -62,17 +70,17 @@ A comprehensive theme featuring deep blues and rich purples for a modern, elegan
 
 ### Prerequisites
 
-- **[Omarchy](https://github.com/omakoto/omarchy)** - Required for automatic installation
+- **[Omarchy](https://github.com/omakoto/omarchy)** - Required (the directory structure, not the GUI)
 - Hyprland (recommended: latest version)
 - Any applications you want to theme from the list above
 
-> **Note:** This theme is designed for Omarchy's theme management system. Without Omarchy, you'll need to manually copy each config file to its respective application (see "Manual Installation without Omarchy" below).
+> **Note:** The `omarchist` GUI is optional - the `apply-theme.sh` script handles everything automatically! If you don't have Omarchy at all, see "Manual Installation without Omarchy" below.
 
 ### Quick Install
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/deep-purple-blue-omarchy.git ~/.config/omarchy/themes/deep-purple-blue
+git clone https://github.com/DanielCoffey1/deep-purple-blue-omarchy.git ~/.config/omarchy/themes/deep-purple-blue
 
 # Apply the theme
 cd ~/.config/omarchy/themes/deep-purple-blue
@@ -83,16 +91,22 @@ cd ~/.config/omarchy/themes/deep-purple-blue
 
 1. **Download the theme:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/deep-purple-blue-omarchy.git ~/.config/omarchy/themes/deep-purple-blue
+   git clone https://github.com/DanielCoffey1/deep-purple-blue-omarchy.git ~/.config/omarchy/themes/deep-purple-blue
    ```
 
-2. **Apply using Omarchist GUI:**
+2. **Apply using the included script (no GUI needed):**
+   ```bash
+   cd ~/.config/omarchy/themes/deep-purple-blue
+   ./apply-theme.sh
+   ```
+
+3. **Or use Omarchist GUI (optional):**
    ```bash
    omarchist
    # Select "deep-purple-blue" from the theme list
    ```
 
-3. **Or apply manually:**
+4. **Or apply manually with symlink:**
    ```bash
    ln -sf ~/.config/omarchy/themes/deep-purple-blue ~/.config/omarchy/current/theme
    hyprctl reload
@@ -121,7 +135,7 @@ If you're not using Omarchy, you can still use individual theme files by copying
 
 ```bash
 # Clone the theme anywhere
-git clone https://github.com/YOUR_USERNAME/deep-purple-blue-omarchy.git ~/Downloads/deep-purple-blue
+git clone https://github.com/DanielCoffey1/deep-purple-blue-omarchy.git ~/Downloads/deep-purple-blue
 
 cd ~/Downloads/deep-purple-blue
 
