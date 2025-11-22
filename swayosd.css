@@ -1,0 +1,30 @@
+/* ────────────────────────────────────────────────────────────
+ * Deep Blue & Purple Theme for SwayOSD
+ * Made with Omarchist
+ * ────────────────────────────────────────────────────────────
+ */
+
+window {
+    background-color: rgba(13, 10, 26, 0.95);
+    border: 2px solid #b794f6;
+    border-radius: 10px;
+}
+
+#container {
+    padding: 20px;
+}
+
+progressbar {
+    background-color: #1a0f2e;
+    border-radius: 5px;
+}
+
+progressbar progress {
+    background-color: #b794f6;
+    border-radius: 5px;
+}
+
+label {
+    color: #e0d4ff;
+    font-size: 14pt;
+}

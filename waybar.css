@@ -1,0 +1,18 @@
+/* ────────────────────────────────────────────────────────────
+ * Deep Blue & Purple Theme for Waybar
+ * Made with Omarchist
+ * ────────────────────────────────────────────────────────────
+ */
+
+@define-color background #0d0a1a;
+@define-color foreground #e0d4ff;
+@define-color background-alt #1a0f2e;
+@define-color foreground-alt #b794f6;
+@define-color accent #7b68ee;
+@define-color accent-alt #9370db;
+@define-color urgent #ff6b9d;
+@define-color warning #f9c859;
+@define-color success #7dd3c0;
+@define-color info #82aaff;
+@define-color border #4a3973;
+@define-color border-active #b794f6;

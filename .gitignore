@@ -1,0 +1,20 @@
+# Backup files
+*.bak
+*.backup
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Custom backgrounds (users may want their own)
+backgrounds/
+
+# Preview images are optional for forks
+# preview.png

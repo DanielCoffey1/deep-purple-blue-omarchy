@@ -1,0 +1,37 @@
+/* ────────────────────────────────────────────────────────────
+ * Deep Blue & Purple Theme for Walker
+ * Made with Omarchist
+ * ────────────────────────────────────────────────────────────
+ */
+
+@define-color background #0d0a1a;
+@define-color foreground #e0d4ff;
+@define-color background-alt #1a0f2e;
+@define-color selected #2d1b69;
+@define-color accent #b794f6;
+@define-color border #4a3973;
+
+window {
+    background-color: @background;
+    border: 2px solid @border;
+    border-radius: 10px;
+}
+
+#input {
+    background-color: @background-alt;
+    color: @foreground;
+    border: 1px solid @accent;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#item {
+    background-color: transparent;
+    color: @foreground;
+}
+
+#item:selected {
+    background-color: @selected;
+    color: @foreground;
+    border-left: 3px solid @accent;
+}

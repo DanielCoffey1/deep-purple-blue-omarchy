@@ -1,0 +1,36 @@
+# ────────────────────────────────────────────────────────────
+# Deep Blue & Purple Theme for Alacritty
+# Made with Omarchist
+# ────────────────────────────────────────────────────────────
+
+[colors.primary]
+background = "#0d0a1a"
+foreground = "#e0d4ff"
+
+[colors.cursor]
+text = "#0d0a1a"
+cursor = "#b794f6"
+
+[colors.selection]
+text = "#e0d4ff"
+background = "#2d1b69"
+
+[colors.normal]
+black = "#1a0f2e"
+red = "#ff6b9d"
+green = "#7dd3c0"
+yellow = "#f9c859"
+blue = "#82aaff"
+magenta = "#c792ea"
+cyan = "#89ddff"
+white = "#e0d4ff"
+
+[colors.bright]
+black = "#4a3973"
+red = "#ff8fb8"
+green = "#a0f5e3"
+yellow = "#ffda7a"
+blue = "#a7c5ff"
+magenta = "#dfb3f4"
+cyan = "#b4e7ff"
+white = "#ffffff"
