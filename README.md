@@ -192,6 +192,11 @@ In `hyprland.conf`:
 
 ```
 deep-purple-blue/
+├── backgrounds/         # Wallpapers (4 images included)
+│   ├── BG1.jpg
+│   ├── BG2.jpg
+│   ├── BG3.jpeg
+│   └── BG4.jpg
 ├── hyprland.conf       # Window manager theme
 ├── hyprlock.conf       # Lock screen colors
 ├── waybar.css          # Status bar theme
