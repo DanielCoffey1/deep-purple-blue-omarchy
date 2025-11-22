@@ -48,6 +48,7 @@ git clone https://github.com/DanielCoffey1/deep-purple-blue-omarchy.git ~/.confi
 - Custom terminal color palettes
 - Themed notifications and overlays
 - GTK application support
+- **4 matching wallpapers included** (deep blue/purple aesthetic)
 
 ⚡ **Performance**
 - Optimized for Wayland/Hyprland
