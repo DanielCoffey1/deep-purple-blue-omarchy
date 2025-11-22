@@ -44,6 +44,20 @@ echo "→ Applying theme..."
 # Change theme symlink
 ln -sf "$THEME_PATH" ~/.config/omarchy/current/theme
 
+echo "→ Installing Waybar configuration..."
+# Copy Waybar config files if they exist in the theme
+if [ -f "$THEME_PATH/waybar-config.jsonc" ]; then
+    mkdir -p ~/.config/waybar
+    cp "$THEME_PATH/waybar-config.jsonc" ~/.config/waybar/config.jsonc
+    echo "  ✓ Waybar config.jsonc installed"
+fi
+
+if [ -f "$THEME_PATH/waybar-style.css" ]; then
+    mkdir -p ~/.config/waybar
+    cp "$THEME_PATH/waybar-style.css" ~/.config/waybar/style.css
+    echo "  ✓ Waybar style.css installed"
+fi
+
 echo "→ Reloading Hyprland..."
 # Reload Hyprland configuration
 if command -v hyprctl &> /dev/null; then

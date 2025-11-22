@@ -48,6 +48,7 @@ git clone https://github.com/DanielCoffey1/deep-purple-blue-omarchy.git ~/.confi
 - Custom terminal color palettes
 - Themed notifications and overlays
 - GTK application support
+- **Complete Waybar configuration included** (layout, modules, and styling)
 - **4 matching wallpapers included** (deep blue/purple aesthetic)
 
 ⚡ **Performance**
@@ -199,7 +200,9 @@ deep-purple-blue/
 │   └── BG4.jpg
 ├── hyprland.conf       # Window manager theme
 ├── hyprlock.conf       # Lock screen colors
-├── waybar.css          # Status bar theme
+├── waybar.css          # Waybar color definitions
+├── waybar-config.jsonc # Complete Waybar configuration
+├── waybar-style.css    # Waybar styling
 ├── kitty.conf          # Kitty terminal theme
 ├── alacritty.toml      # Alacritty terminal theme
 ├── ghostty.conf        # Ghostty terminal theme
