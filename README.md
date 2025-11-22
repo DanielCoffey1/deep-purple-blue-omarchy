@@ -62,9 +62,11 @@ A comprehensive theme featuring deep blues and rich purples for a modern, elegan
 
 ### Prerequisites
 
-- [Omarchy](https://github.com/omakoto/omarchy) - The theme management system
+- **[Omarchy](https://github.com/omakoto/omarchy)** - Required for automatic installation
 - Hyprland (recommended: latest version)
 - Any applications you want to theme from the list above
+
+> **Note:** This theme is designed for Omarchy's theme management system. Without Omarchy, you'll need to manually copy each config file to its respective application (see "Manual Installation without Omarchy" below).
 
 ### Quick Install
 
@@ -112,6 +114,45 @@ omarchist  # or manually change the symlink
 # Remove the theme directory
 rm -rf ~/.config/omarchy/themes/deep-purple-blue
 ```
+
+### Manual Installation without Omarchy
+
+If you're not using Omarchy, you can still use individual theme files by copying them to their respective locations:
+
+```bash
+# Clone the theme anywhere
+git clone https://github.com/YOUR_USERNAME/deep-purple-blue-omarchy.git ~/Downloads/deep-purple-blue
+
+cd ~/Downloads/deep-purple-blue
+
+# Copy individual configs (adjust paths as needed)
+# Hyprland
+cat hyprland.conf >> ~/.config/hypr/hyprland.conf
+
+# Waybar
+cp waybar.css ~/.config/waybar/style.css
+
+# Kitty
+cat kitty.conf >> ~/.config/kitty/kitty.conf
+
+# Alacritty
+cat alacritty.toml >> ~/.config/alacritty/alacritty.toml
+
+# Mako
+cp mako.ini ~/.config/mako/config
+
+# GTK
+mkdir -p ~/.config/gtk-4.0 ~/.config/gtk-3.0
+cp gtk.css ~/.config/gtk-4.0/gtk.css
+cp gtk.css ~/.config/gtk-3.0/gtk.css
+
+# Reload your applications after copying
+hyprctl reload
+killall waybar && waybar &
+killall mako && mako &
+```
+
+**Warning:** This method appends/overwrites your existing configs. Back them up first!
 
 ## Customization
 
